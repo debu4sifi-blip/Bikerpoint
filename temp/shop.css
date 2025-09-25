@@ -1,0 +1,95 @@
+/* SHOP PAGE STYLING */
+
+/* Shop Section */
+.shop {
+  padding: 80px 10%;
+  text-align: center;
+  background: #000000;
+}
+
+/* Title */
+.shop h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #fffefe;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Grid Container */
+.shop-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 35px;
+}
+
+/* Product Card */
+.shop-card {
+  background: #000000;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(68,78,45,0.5);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  text-align: left;
+}
+
+/* Image */
+.shop-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.shop-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Description */
+.shop-card p {
+  font-size: 0.95rem;
+  color: #cfcfcf;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Price */
+.shop-card .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e63946;
+}
+
+/* Hover Effect */
+.shop-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(70,80,47,0.7);
+}
+
+/* Fade-up animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.shop-card {
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.shop-card:nth-child(1) { animation-delay: 0.2s; }
+.shop-card:nth-child(2) { animation-delay: 0.4s; }
+.shop-card:nth-child(3) { animation-delay: 0.6s; }
+.shop-card:nth-child(4) { animation-delay: 0.8s; }
